@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run uiforstocks.py
+web: sh setup.sh && streamlit run carpricepred_deploy.py
