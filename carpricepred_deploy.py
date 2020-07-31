@@ -38,26 +38,32 @@ Present_Price = st.text_input("Present market price of the Car (in Lakhs)", "10"
 Kms_Driven = st.text_input("Kms driven in the car", "20000")
 
 owners = st.selectbox('number of previous owners?', ("0", "1", "3"))
+if owners == "0":
+    owners = 0
+elif owners == "1":
+    owners = 1
+elif owners == "3":
+    owners = 3
 
 years_old = st.text_input("How old is the car in years?", "3")
 
-fuel_type = st.selectbox('Fuel type of the car', ('Diesel', 'Petrol', 'CNG'))
-if fuel_type =='Diesel':
+fuel_type = st.selectbox('Fuel type of the car', ("Diesel", "Petrol", "CNG"))
+if fuel_type == "Diesel":
     Fuel_type_diesel = 1
     Fuel_type_Petrol = 0
 
-elif fuel_type =='Petrol':
+elif fuel_type == "Petrol":
     Fuel_type_diesel = 0
     Fuel_type_Petrol = 1
 
-else:
+elif fuel_type == "CNG":
     Fuel_type_diesel = 0
     Fuel_type_Petrol = 0
 
 indivisual = st.selectbox('Are you  an Indivisual or a Dealer?', ("indivisual", "Dealer"))
-if indivisual =='indivisual':
+if indivisual =="indivisual":
     Seller_Type_Indivisual = 1
-else:
+elif indivisual == "Dealer":
     Seller_Type_Indivisual = 0
 
 Transmission = st.selectbox('What kind of transmission does it have?', ('Manual', 'Automatic'))
