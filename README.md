@@ -1,6 +1,6 @@
 # Car-price-prediction-using-ML
 
-#### The aim of this repository is to show how to make a highly accurate ML model for car price prediction.
+#### The aim of this repository is to show you how to make a highly accurate ML model for car price prediction.
 
 #### The ML model uses hyperparameter training to improve its accuracy.
 
